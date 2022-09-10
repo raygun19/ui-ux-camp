@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>CS1300 HTML/CSS/JS Studio</title>
     <!-- import javascript variables and functions -->
@@ -11,16 +11,23 @@
   <!-- page content goes into <body> -->
   <body>
     <div id="cs1300-gallery">
-      <h1>Welcome to my bakery</h1>
-      <p>Add your own images and styles!</p>
+      <h1 id="header">Reagan's Bakery</h1>
 
       <!-- TODO: PART I Add your own images and use CSS flex to make sure they work on different screen sizes -->
-      <div class="gallery-item-container">
-        <img class="gallery-item" src="./assets/jeff.jpg" alt="jeff watching u">
-      </div>
+      <main id="bakery images" class="gallery-item-container">
+        <img class="gallery-item" src="./assets/choc.jpg" alt="chocolate cake">
+        <img class="gallery-item" src="./assets/straw.jpg" alt="strawberry cake">
+        <img class="gallery-item" src="./assets/bday.jpg" alt="birthday cake">
+        <img class="gallery-item" src="./assets/berry.jpg" alt="berry cake">
+        <img class="gallery-item" src="./assets/red-vel.jpg" alt="red velvet cake">
+        <img class="gallery-item" src="./assets/carrot.jpg" alt="carrot cake">
+     
+      </main>
 
       <!-- TODO: PART II Uncomment the line below, and hook up this button to display data from an API -->
-      <!-- <button onclick="">Press this button to display some fruit data</button> -->
+      <button onclick="updatePage()">Press this button to display some fruit data</button>
+      <p>Fruit data here:</p>
+      <div id="box"></div>
     </div>
   </body>
 
